@@ -1,0 +1,18 @@
+<ul class="nav nav-tabs">
+	<%params[:tab] = 'tab1'%>
+	<li class="<%= 'active' if params[:tab] == 'tab1' %> nav-item"><a class="nav-link active tag tag-default" href="#tab1" data-toggle="tab">Personal Info</a></li>
+	<li class="<%= 'active' if params[:tab] == 'tab2' %> nav-item"> <a class="nav-link tag tag-default" href="#tab2" data-toggle="tab">List image</a></li>
+	<li class="<%= 'active' if params[:tab] == 'tab3' %> nav-item"> <a class="nav-link tag tag-default" href="#tab3" data-toggle="tab">Tab3</a></li>
+</ul>
+
+<div class="tab-content">
+	<div class="<%= if (params[:tab] == 'tab1' || !params[:tab]) then 'tab-pane active'  else 'tab-pane' end %>" id="tab1">
+		<%= render partial:"users/show"%>
+	</div>
+	<div class="<%= if params[:tab] == 'tab2' then 'tab-pane active'  else 'tab-pane' end%>" id="tab2">
+		<div>Wellcome to store</div>
+	</div>
+	<div class="<%= if params[:tab] == 'tab3' then 'tab-pane active'  else 'tab-pane' end%>" id="tab3">
+		<div>Let's go</div>
+	</div>
+</div>
