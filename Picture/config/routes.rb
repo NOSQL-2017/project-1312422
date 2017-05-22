@@ -14,5 +14,6 @@ Rails.application.routes.draw do
   get 'contact' => 'pages#contact', as: :contact
   get 'register' => 'users#new', as: :register
   get 'info' => 'persionals#personal_page'
+  get 'auth/:provider/callback', to: "sessions#create"
   resources :sessions, only: [:new, :create, :destroy]
 end
