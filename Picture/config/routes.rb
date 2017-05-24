@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :images
   resources :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   get 'sessions' => 'sessions#create', as: :create
@@ -15,5 +16,6 @@ Rails.application.routes.draw do
   get 'register' => 'users#new', as: :register
   get 'info' => 'persionals#personal_page'
   get 'auth/:provider/callback', to: "sessions#create"
+  get 'newimage' => 'images#new'
   resources :sessions, only: [:new, :create, :destroy]
 end

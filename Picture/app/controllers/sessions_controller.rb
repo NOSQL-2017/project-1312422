@@ -1,4 +1,3 @@
-require 'pry'
 class SessionsController < ApplicationController
 	before_action :authorize, except: [:new, :create]
 	def new
@@ -18,7 +17,6 @@ class SessionsController < ApplicationController
 			auth = request.env["omniauth.auth"]
 			session[:omniauth] = auth.except('extra')
 			user = User.sign_in_from_omniauth(auth)
-			binding.pry
 			session[:current_user_id] = user.id
 			redirect_to "/"
 		end
