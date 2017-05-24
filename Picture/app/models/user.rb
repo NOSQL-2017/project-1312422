@@ -1,4 +1,3 @@
-require 'pry'
 class User < ApplicationRecord
   #has_secure_password
   attr_accessor :avatar
@@ -30,7 +29,6 @@ class User < ApplicationRecord
   end
 
   def self.create_user_from_omniauth(auth)
-            binding.pry
     create(
       uid: auth['uid'],
       provider: auth['provider'],
