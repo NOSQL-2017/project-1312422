@@ -1,10 +1,19 @@
+require 'pry'
 class User < ApplicationRecord
-  has_secure_password
+  #has_secure_password
   attr_accessor :avatar
 
   after_save :save_avatar_image, if: :avatar
   def save_avatar_image
-  	filename = avatar.original_filename
+    if avatar.original_filename
+        filename = avatar.original_filename
+  	else
+        require 'open-uri'
+        open('image.png', 'wb') do |file|
+          file << open(avatar_filename).read
+        end
+    end
+
   	folder = "public/users/#{id}/avatar"
 
   	FileUtils::mkdir_p folder
@@ -21,13 +30,15 @@ class User < ApplicationRecord
   end
 
   def self.create_user_from_omniauth(auth)
+            binding.pry
     create(
       uid: auth['uid'],
       provider: auth['provider'],
-      avatar: auth['info']['image'],
+      avatar_filename: auth['info']['image'],
       name: auth['info']['name'],
       email: auth['info']['email'],
-      username: auth['extra']['raw_info']['username']
+      username: auth['extra']['raw_info']['screen_name'],
+      name: auth['extra']['raw_info']['name']
     )
   end
 end

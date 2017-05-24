@@ -26,14 +26,14 @@ Sau khi thực hiện xong giai đoạn 1, sinh viên sẽ được cung cấp m
 ## Lập trình server
 ### MVC
 * [X] MVC 
-* [C] Config
+* [X] Config
 * [X] REST routing
 * [X] Layout & partial
 
 ### Lập trình dữ liệu
-* [ ] Thêm (MSSV1)
-* [ ] Xóa (MSSV1)
-* [ ] Sửa (MSSV1)
+* [X] Thêm (MSSV1)
+* [X] Xóa (MSSV1)
+* [X] Sửa (MSSV1)
 * [ ] Tìm kiếm (MSSV1)
 
 ### Xử lý lỗi
@@ -47,7 +47,7 @@ Sau khi thực hiện xong giai đoạn 1, sinh viên sẽ được cung cấp m
 Liệt kê các API nhóm đã sử dụng được ở đây
 * [ ] Facebook API: mô tả (MSSV1)
 * [ ] Google API: mô tả (MSSV1)
-* [ ] ...
+* [X] Twitter API
 
 ## Lập trình client
 * [ ] Kiểm tra dữ liệu (MSSV1)
