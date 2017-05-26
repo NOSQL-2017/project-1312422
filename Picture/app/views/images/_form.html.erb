@@ -12,6 +12,8 @@
   <% end %>
 
   <div class="row">
+    <h5>Cover</h5>
+      <%= f.file_field :cover, :class => 'form-group', :style => 'width: 70%; height:40px'%>
     <h5>Describe</h5>
     <%= f.text_area :script, :class => 'form-group', size: '50x3', :style => 'width: 70%' , :required => true %>
   </div>
