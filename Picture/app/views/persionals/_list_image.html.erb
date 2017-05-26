@@ -4,14 +4,13 @@
 	<% @images.each do |image|%>
 	<div class="col-sm-3 col-lg-3 col-md-3">
 		<div class="thumbnail">
-			<!-- <img src="<%= food.avatar %>" alt="" class="img-thumbnail" style="width:100%; height: 200px"> -->
 			<div class="caption">
 				<h4><textarea rows="1" disabled="disabled"><%=image.script%></textarea></h4>
-				<h5 class="text-muted"><%=food.created_at%></h5>
+				<h5 class="text-muted"><%=image.created_at%></h5>
 			</div>
 			<div>
 				<%= link_to 'Delete', image, method: :delete, data: { confirm: 'Do you want destroy?' }, class: 'btn btn-danger', style: 'padding: 2px 10px;'%>
-				<%= link_to 'Edit', edit_image_path(food), class: 'btn btn-default', style: 'padding: 2px 10px;'%>
+				<%= link_to 'Edit', edit_image_path(image), class: 'btn btn-default', style: 'padding: 2px 10px;'%>
 			</div>
 		</div>
 	</div>

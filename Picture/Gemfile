@@ -55,6 +55,7 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'omniauth-twitter', '1.2.1'
+gem 'bootstrap-select-rails', '1.6.3'
 gem 'pry', '~> 0.10.4'
 gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 gem 'aws-sdk', '~> 2.9', '>= 2.9.23'
