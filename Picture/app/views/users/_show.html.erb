@@ -1,7 +1,7 @@
 
-<!--   <div class="col-lg-4">
+  <div>
     <%= image_tag "/users/#{@user.id}/avatar/#{@user.avatar_filename}", :size => "260x180" if @user.avatar_filename? %>
-  </div> -->
+  </div>
     <div class="alert alert-info" >
       <strong>Username:</strong>
       <%= @user.username %>
@@ -21,4 +21,5 @@
 <br>
 <div class="text-xs-right">
   <%= link_to 'Edit', edit_user_path(@user), :class => 'btn btn-success' %>
+  <%= link_to 'Friend', friends_path, :class => 'btn btn-info' %>
 </div>

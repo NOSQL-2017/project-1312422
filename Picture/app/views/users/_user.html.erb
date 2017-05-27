@@ -7,7 +7,16 @@
         <div ><%= user.username %></div>
         <div ><%= user.name %></div>
         <p class="pull-xs-right" style="margin-right: 5px; margin-bottom: 5px;">
-          <%= link_to 'Info', user, class: 'btn btn-success', style: 'padding: 2px 10px;' %>
+          <%= link_to 'Info', user, class: 'btn btn-info', style: 'padding: 2px 10px;' %>
+          <% @temp = User.find(session[:current_user_id])%>
+          <% if session[:current_user_id] != user.id%>
+            <% if @temp.friends.find_by_friend_id(user.id)== nil%>
+
+              <%= link_to "Add Friend", friends_path(:friend_id => user), :method => :post, class: 'btn btn-success', style: 'padding: 2px 10px;'%>
+            <% else %>
+              <%= link_to 'Unfriend', {controller: "friends", action: "destroy", id: user.id}, method: "delete", class: 'btn btn-danger', style: 'padding: 2px 10px;' %>
+            <% end %>
+          <% end %>
         </p>
       </div> 
   </div>

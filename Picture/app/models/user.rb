@@ -1,7 +1,8 @@
 class User < ApplicationRecord
   # has_secure_password
   attr_accessor :avatar
-
+  has_many :friends
+  has_many :friends_users, :through => :friends
   after_save :save_avatar_image, if: :avatar
   def save_avatar_image
     if avatar.original_filename

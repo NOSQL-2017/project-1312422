@@ -62,7 +62,9 @@
       </li>
       <li><%= link_to 'logout',logout_path, class: "btn btn-outline-success pull-xs-right", style: "margin-left:10px"%></li>
       <%= form_tag(users_path, method: :get) do %>
-      <%end%>
+          <%= text_field_tag :search,nil, placeholder: 'Search friend...', style: "padding-bottom: 7px; padding-top: 3px; padding-left: 4px;"%>
+          <%= submit_tag 'Search', :class => 'btn btn-outline-success'%>
+      <% end %>
       <%end%>
       </ul>
     </div>
