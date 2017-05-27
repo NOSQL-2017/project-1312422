@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  #has_secure_password
+  # has_secure_password
   attr_accessor :avatar
 
   after_save :save_avatar_image, if: :avatar

@@ -1,14 +1,3 @@
-GIT
-  remote: git://github.com/thoughtbot/paperclip.git
-  revision: 093b4da18444d883de826f58628089c2f480d461
-  specs:
-    paperclip (5.1.0)
-      activemodel (>= 4.2.0)
-      activesupport (>= 4.2.0)
-      cocaine (~> 0.5.5)
-      mime-types
-      mimemagic (~> 0.3.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -50,21 +39,10 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (7.1.4)
-    aws-sdk (2.9.23)
-      aws-sdk-resources (= 2.9.23)
-    aws-sdk-core (2.9.23)
-      aws-sigv4 (~> 1.0)
-      jmespath (~> 1.0)
-    aws-sdk-resources (2.9.23)
-      aws-sdk-core (= 2.9.23)
-    aws-sigv4 (1.0.0)
     bindex (0.5.0)
     bootstrap-select-rails (1.6.3)
     builder (3.2.3)
     byebug (9.0.6)
-    climate_control (0.2.0)
-    cocaine (0.5.8)
-      climate_control (>= 0.0.3, < 1.0)
     coderay (1.1.1)
     coffee-rails (4.2.1)
       coffee-script (>= 2.2.0)
@@ -85,7 +63,6 @@ GEM
     jbuilder (2.6.4)
       activesupport (>= 3.0.0)
       multi_json (>= 1.2)
-    jmespath (1.3.1)
     jquery-rails (4.3.1)
       rails-dom-testing (>= 1, < 3)
       railties (>= 4.2.0)
@@ -102,7 +79,6 @@ GEM
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
-    mimemagic (0.3.2)
     mini_portile2 (2.1.0)
     minitest (5.10.2)
     multi_json (1.12.1)
@@ -205,7 +181,6 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
-  aws-sdk (~> 2.9, >= 2.9.23)
   bindex (~> 0.5.0)
   bootstrap-select-rails (= 1.6.3)
   byebug
@@ -215,7 +190,6 @@ DEPENDENCIES
   json (~> 1.8, >= 1.8.3)
   listen (~> 3.0.5)
   omniauth-twitter (= 1.2.1)
-  paperclip!
   pg (~> 0.18)
   pry (~> 0.10.4)
   puma (~> 3.0)

@@ -10,10 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170526091805) do
+ActiveRecord::Schema.define(version: 20170527034405) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "friends", force: :cascade do |t|
+    t.integer "status",             default: 1
+    t.integer "user_id"
+    t.integer "friend_id"
+    t.index ["user_id"], name: "index_friends_on_user_id", using: :btree
+  end
 
   create_table "images", force: :cascade do |t|
     t.text     "script"
@@ -41,5 +48,6 @@ ActiveRecord::Schema.define(version: 20170526091805) do
     t.string   "uid"
   end
 
+  add_foreign_key "friends", "users"
   add_foreign_key "images", "users"
 end
