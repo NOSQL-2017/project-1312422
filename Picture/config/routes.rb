@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  namespace :admin do
+    resources :images
+    resources :friends
+    resources :users
+
+    root to: "images#index"
+  end
+
   get 'friends/index'
 
   get 'friends/create'

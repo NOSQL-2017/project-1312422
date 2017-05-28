@@ -3,7 +3,7 @@
 **Name of your app** là repository cho đồ án nhóm. Nhóm tối đa 4 thành viên.
 
 Thành viên:
-* [X] 1312422 - Nguyen Le Duy Phat - https://github.com/NLDPhat - email - 100%
+* [X] 1312422 - Nguyen Le Duy Phat - https://github.com/NLDPhat - email                                                      - 100%
 
 URL: **URL hosting của bài tập**
 Báo cáo: **URL Github Page của đề tài**
@@ -34,7 +34,7 @@ Sau khi thực hiện xong giai đoạn 1, sinh viên sẽ được cung cấp m
 * [X] Thêm (MSSV1)
 * [X] Xóa (MSSV1)
 * [X] Sửa (MSSV1)
-* [ ] Tìm kiếm (MSSV1)
+* [X] Tìm kiếm (MSSV1)
 
 ### Xử lý lỗi
 * [ ] Xử lý lỗi trong cùng trang web (MSSV1)
@@ -50,13 +50,13 @@ Liệt kê các API nhóm đã sử dụng được ở đây
 * [X] Twitter API
 
 ## Lập trình client
-* [ ] Kiểm tra dữ liệu (MSSV1)
+* [X] Kiểm tra dữ liệu (MSSV1)
 * [ ] Animation (MSSV1)
 * [ ] Thao tác DOM (MSSV1)
 * [ ] AJAX (MSSV1)
 
 ## Bảo mật
-* [ ] Chứng thực (MSSV1)
+* [X] Chứng thực (MSSV1)
 * [ ] Phân quyền sử dụng một số trang web với nhiều vai trò khác nhau (MSSV1)
    * [ ] Không cho phép thao tác vào trang web khi không có quyền (MSSV1)
    * [ ] Thể hiện các chức năng khác nhau trên cùng giao diện khi người dùng có quyền khác nhau (MSSV1)
