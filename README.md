@@ -31,36 +31,36 @@ Sau khi thực hiện xong giai đoạn 1, sinh viên sẽ được cung cấp m
 * [X] Layout & partial
 
 ### Lập trình dữ liệu
-* [X] Thêm (MSSV1)
-* [X] Xóa (MSSV1)
-* [X] Sửa (MSSV1)
-* [X] Tìm kiếm (MSSV1)
+* [X] Thêm 
+* [X] Xóa 
+* [X] Sửa 
+* [X] Tìm kiếm 
 
 ### Xử lý lỗi
-* [ ] Xử lý lỗi trong cùng trang web (MSSV1)
-* [ ] Xử lý lỗi dùng trang web riêng (MSSV1)
-   * [ ] 401 (MSSV1)
-   * [ ] 404 (MSSV1)
-   * [ ] 500 (MSSV1)
+* [X] Xử lý lỗi trong cùng trang web 
+* [X] Xử lý lỗi dùng trang web riêng 
+   * [X] 401 
+   * [X] 404 
+   * [X] 500 
 
 ### Tương tác API khác
 Liệt kê các API nhóm đã sử dụng được ở đây
-* [ ] Facebook API: mô tả (MSSV1)
-* [ ] Google API: mô tả (MSSV1)
+* [ ] Facebook API: mô tả 
+* [ ] Google API: mô tả 
 * [X] Twitter API
 
 ## Lập trình client
-* [X] Kiểm tra dữ liệu (MSSV1)
-* [ ] Animation (MSSV1)
-* [ ] Thao tác DOM (MSSV1)
-* [ ] AJAX (MSSV1)
+* [X] Kiểm tra dữ liệu
+* [ ] Animation
+* [X] Thao tác DOM 
+* [ ] AJAX 
 
 ## Bảo mật
-* [X] Chứng thực (MSSV1)
-* [ ] Phân quyền sử dụng một số trang web với nhiều vai trò khác nhau (MSSV1)
-   * [ ] Không cho phép thao tác vào trang web khi không có quyền (MSSV1)
-   * [ ] Thể hiện các chức năng khác nhau trên cùng giao diện khi người dùng có quyền khác nhau (MSSV1)
-   * [ ] Thể hiện lỗi khi không truy xuất được trang khi không có quyền (MSSV1)
+* [X] Chứng thực 
+* [ ] Phân quyền sử dụng một số trang web với nhiều vai trò khác nhau 
+   * [ ] Không cho phép thao tác vào trang web khi không có quyền 
+   * [ ] Thể hiện các chức năng khác nhau trên cùng giao diện khi người dùng có quyền khác nhau 
+   * [ ] Thể hiện lỗi khi không truy xuất được trang khi không có quyền 
 
 ## Cải tiến hệ thống với NoSQL
 * [ ] Chứng thực (Key-value)
@@ -74,11 +74,11 @@ Liệt kê các API nhóm đã sử dụng được ở đây
 
 ## Chức năng đã thực hiện
 Các **yêu cầu chức năng** (check và ghi MSSV vào các phần chức năng đã thực hiện)
-* [ ] Yêu cầu 1. (MSSV1)
+* [ ] Yêu cầu 1. 
 
 ## Chức năng
 Các **yêu cầu chức năng** (check và ghi MSSV vào các phần chức năng đã thực hiện)
-* [ ] Yêu cầu 1. (MSSV1)
+* [ ] Yêu cầu 1. 
 
 
 ## Demo

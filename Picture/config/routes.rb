@@ -32,5 +32,7 @@ Rails.application.routes.draw do
   get 'info' => 'persionals#personal_page'
   get 'auth/:provider/callback', to: "sessions#create"
   get 'newimage' => 'images#new'
+  get 'share' => 'images#share'
+  get 'unshare' => 'images#unshare'
   resources :sessions, only: [:new, :create, :destroy]
 end

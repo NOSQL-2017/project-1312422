@@ -1,5 +1,5 @@
 class ImagesController < ApplicationController
-  before_action :set_image, only: [:show, :edit, :update, :destroy]
+  before_action :set_image, only: [:show, :edit, :update, :destroy, :share, :unshare]
 
   # GET /images
   # GET /images.json
@@ -61,6 +61,18 @@ class ImagesController < ApplicationController
     end
   end
 
+  def share
+    @image.update(:status => 1)
+    @image.save
+    redirect_to :back
+  end
+
+  def unshare
+    @image.update(:status => 0)
+    @image.save
+    redirect_to :back
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_image
@@ -69,6 +81,6 @@ class ImagesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def image_params
-      params.require(:image).permit(:script,:cover, :user_id)
+      params.require(:image).permit(:script,:cover, :user_id, :status)
     end
 end

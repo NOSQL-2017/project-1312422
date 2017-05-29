@@ -10,13 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170527034405) do
+ActiveRecord::Schema.define(version: 20170529080927) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "friends", force: :cascade do |t|
-    t.integer "status",             default: 1
+    t.integer "status"
     t.integer "user_id"
     t.integer "friend_id"
     t.index ["user_id"], name: "index_friends_on_user_id", using: :btree
@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(version: 20170527034405) do
     t.integer  "cover_file_size"
     t.datetime "cover_updated_at"
     t.string   "cover_filename"
+    t.integer  "status",             default: 1
     t.index ["user_id"], name: "index_images_on_user_id", using: :btree
   end
 
