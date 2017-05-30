@@ -69,23 +69,19 @@ Liệt kê các API nhóm đã sử dụng được ở đây
 * [ ] Theo dõi truy xuất của hệ thống (Column Family)
 * [ ] Cân bằng tải ứng dụng bằng proxy
 
-## Nâng cao
-* [ ] ...
-
 ## Chức năng đã thực hiện
 Các **yêu cầu chức năng** (check và ghi MSSV vào các phần chức năng đã thực hiện)
-* [ ] Yêu cầu 1. 
+* [X] Đăng nhập, bảo mật password, đăng nhập bằng api
+* [X] Tạo tài khoản, kết bạn
+* [X] Chia sẻ hình ảnh
 
-## Chức năng
-Các **yêu cầu chức năng** (check và ghi MSSV vào các phần chức năng đã thực hiện)
-* [ ] Yêu cầu 1. 
 
 
 ## Demo
 
 Link ảnh GIF demo ứng dụng:
 
-![Video Walkthrough](demo.gif)
+![Video Walkthrough](Project_CDCL_HTTT.gif)
 
 Tạo ảnh GIF với chương trình [LiceCap](http://www.cockos.com/licecap/).
 

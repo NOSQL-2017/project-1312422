@@ -13,7 +13,7 @@
 			<div>
 				<%= link_to 'Delete', image, method: :delete, data: { confirm: 'Do you want destroy?' }, class: 'btn btn-danger', style: 'padding: 2px 10px;'%>
 				<%= link_to 'Edit', edit_image_path(image), class: 'btn btn-default', style: 'padding: 2px 10px;'%>
-            <% if image.status == 0%>
+            <% if image.status != 1%>
               <%= link_to 'Share',share_path(:id => image.id), class: 'btn btn-info', style: 'padding: 2px 10px;'%>
             <% else %>
               <%= link_to 'Unshare', unshare_path(:id => image.id), class: 'btn btn-danger', style: 'padding: 2px 10px;' %>
