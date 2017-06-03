@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 20170529080927) do
     t.integer  "cover_file_size"
     t.datetime "cover_updated_at"
     t.string   "cover_filename"
-    t.integer  "status",             default: 0
+    t.integer  "status"
     t.index ["user_id"], name: "index_images_on_user_id", using: :btree
   end
 
