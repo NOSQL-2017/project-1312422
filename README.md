@@ -3,7 +3,7 @@
 **Name of your app** là repository cho đồ án nhóm. Nhóm tối đa 4 thành viên.
 
 Thành viên:
-* [X] 1312422 - Nguyen Le Duy Phat - https://github.com/NLDPhat - email                                                      - 100%
+* [X] 1312422 - Nguyen Le Duy Phat - https://github.com/NLDPhat -email: phatduynguyen@gmail.com- 100%
 
 URL: **https://ancient-garden-53375.herokuapp.com**
 Báo cáo: **URL Github Page của đề tài**
