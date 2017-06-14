@@ -1,0 +1,15 @@
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: postgres
+  password: 12201995
+  host: 172.20.0.2
+
+development:
+  <<: *default
+  database: app_api_development
+
+  test:
+  <<: *default
+  database: app_api_test
