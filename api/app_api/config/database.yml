@@ -5,14 +5,11 @@ default: &default
   username: postgres
   password: 12201995
   host: 172.20.0.2
-  url: <%= ENV["DATABASE_URL"]%>
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
   <<: *default
+  database: app_api_development
 
   test:
   <<: *default
-
-production:
-  <<: *default
+  database: app_api_test

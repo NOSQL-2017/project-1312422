@@ -10,24 +10,41 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170607153423) do
+ActiveRecord::Schema.define(version: 20170529080927) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "articles", force: :cascade do |t|
-    t.string "name"
-    t.string "author_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+  create_table "friends", id: :serial, force: :cascade do |t|
+    t.integer "status"
+    t.integer "user_id"
+    t.integer "friend_id"
+    t.index ["user_id"], name: "index_friends_on_user_id"
   end
 
-  create_table "users", force: :cascade do |t|
+  create_table "images", id: :serial, force: :cascade do |t|
+    t.text "script"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "user_id"
+    t.string "cover_filename"
+    t.integer "status"
+    t.index ["user_id"], name: "index_images_on_user_id"
+  end
+
+  create_table "users", id: :serial, force: :cascade do |t|
     t.string "username"
-    t.string "password"
-    t.string "email"
+    t.string "password_digest"
+    t.string "name"
+    t.string "avatar_filename"
+    t.integer "gender"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "email"
+    t.string "provider"
+    t.string "uid"
   end
 
+  add_foreign_key "friends", "users"
+  add_foreign_key "images", "users"
 end

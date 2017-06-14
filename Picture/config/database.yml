@@ -4,13 +4,19 @@ default: &default
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
+  username: postgres
+  password: 12201995
+  host: 172.18.0.2
   encoding: UTF8
 
 development:
   <<: *default
-
+  database: Picture_development
 test:
   <<: *default
-
+  database: Picture_test
 production:
   <<: *default
+  database: Picture_production
+  username: Picture
+  password: <%= ENV['PICTURE_DATABASE_PASSWORD'] %>

@@ -18,7 +18,7 @@ services:
     links:
       - picture_db_1
     volumes:
-      - ./app_api:/webapp
+      - ./api/app_api:/webapp
     ports:
       - "3001:3000"
     command: bundle exec rails s -p 3001 -b '0.0.0.0'
