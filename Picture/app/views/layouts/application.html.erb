@@ -50,22 +50,8 @@
         <li><%= link_to 'Contact', contact_path, class: "nav-item nav-link #{yield(:contact_active)}" %></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-      <% if(session[:current_user_id] == nil)%>
-      <li><%= link_to 'Register',register_path, class: "btn btn-outline-success pull-xs-right", style: "margin-left:10px"%></li>
-      <li><%= link_to 'login', login_path, class: "btn btn-outline-success pull-xs-right", style: "margin-left:10px"%></li>  
-      <% else %>
-      <li>
-        <% @User = User.find_by(id: session[:current_user_id]) %>
-        <%= link_to  info_path do %>
-        <%=@User.username%>
-        <% end %>
       </li>
-      <li><%= link_to 'logout',logout_path, class: "btn btn-outline-success pull-xs-right", style: "margin-left:10px"%></li>
-      <%= form_tag(users_path, method: :get) do %>
-          <%= text_field_tag :search,nil, placeholder: 'Search friend...', style: "padding-bottom: 7px; padding-top: 3px; padding-left: 4px;"%>
-          <%= submit_tag 'Search', :class => 'btn btn-outline-success'%>
-      <% end %>
-      <%end%>
+      
       </ul>
     </div>
   </div>
