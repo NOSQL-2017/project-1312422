@@ -27,4 +27,8 @@ class User < ApplicationRecord
     end while (new_token.blank? || self.class.exists?(token: new_token))
     self.token = new_token
   end
+
+  def index
+    User.all
+  end
 end
