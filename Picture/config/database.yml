@@ -3,33 +3,13 @@ default: &default
   adapter: postgresql
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: postgres
-  password: 12201995
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  host: db
-=======
-=======
->>>>>>> parent of 06890ec... update
->>>>>>> 3b55d8ba81b591f0d26be3d394f4c53a18660839
-  #host: 172.18.0.2
-  host: localhost
-  encoding: UTF8
->>>>>>> parent of 06890ec... update
 
 development:
   <<: *default
   database: Picture_development
-
-  
 test:
   <<: *default
   database: Picture_test
-
 production:
   <<: *default
   database: Picture_production
-  username: Picture
-  password: <%= ENV['PICTURE_DATABASE_PASSWORD'] %>

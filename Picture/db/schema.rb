@@ -10,13 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20170529080927) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-<<<<<<< HEAD
-=======
   create_table "friends", force: :cascade do |t|
     t.integer "status"
     t.integer "user_id"
@@ -26,15 +24,11 @@ ActiveRecord::Schema.define(version: 0) do
 
   create_table "images", force: :cascade do |t|
     t.text     "script"
-    t.datetime "created_at",         null: false
-    t.datetime "updated_at",         null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
     t.integer  "user_id"
-    t.string   "cover_file_name"
-    t.string   "cover_content_type"
-    t.integer  "cover_file_size"
-    t.datetime "cover_updated_at"
     t.string   "cover_filename"
-    t.integer  "status",             default: 0
+    t.integer  "status"
     t.index ["user_id"], name: "index_images_on_user_id", using: :btree
   end
 
@@ -53,5 +47,4 @@ ActiveRecord::Schema.define(version: 0) do
 
   add_foreign_key "friends", "users"
   add_foreign_key "images", "users"
->>>>>>> parent of 06890ec... update
 end

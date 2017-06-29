@@ -1,3 +1,5 @@
 <h3>
-	Home
+	<% if session[:current_user_id] != nil %>
+	<%= render partial:"persionals/list_image"%>
+	<% end %>
 </h3>
