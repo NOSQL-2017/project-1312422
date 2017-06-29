@@ -1,23 +1,16 @@
-<%= form_for(user) do |f| %>
-  <% if user.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+<%= form_tag users_path do %>
 
-      <ul>
-      </ul>
-    </div>
-  <% end %>
   <div class="row">
     <div class="col-lg-6">
 
       <h5>Username</h5>
-      <%= f.text_field :username, :class => 'form-group', :style => 'width: 70%; height:40px' %>
+      <%= text_field_tag :username, nil, class: 'form-group', style: 'width: 70%; height:40px' %>
 
       <h5>Password</h5>
-      <%= f.password_field :password, :class => 'form-group', :style => 'width: 70%; height:40px'%>
+      <%= password_field_tag :password, nil, :class => 'form-group', :style => 'width: 70%; height:40px'%>
 
       <h5>Your name</h5>
-      <%= f.text_field :name, :class => 'form-group', :style => 'width: 70%; height:40px' %>
+      <%= text_field_tag :name, nil, :class => 'form-group', :style => 'width: 70%; height:40px' %>
 
 
       <h5></h5>
@@ -25,18 +18,17 @@
     <div class="col-lg-6">
 
       <h5>Gender</h5>
-      <%= f.select(:gender, options_for_select([['female', 2], ['male', 1]]), {}, {class: "form-control", :style => 'width: 70%; height:40px'}) %>
-
+      <%= select_tag(:gender, options_for_select([['female', 2], ['male', 1]]), {class: "form-control", :style => 'width: 70%; height:40px'}) %>
       <h5>Email</h5>
-      <%= f.text_field :email, :class => 'form-group', :style => 'width: 70%; height:40px'%>
+      <%= text_field_tag :email, nil, :class => 'form-group', :style => 'width: 70%; height:40px'%>
 
       <h5>Avatar</h5>
-      <%= f.file_field :avatar, :class => 'form-group', :style => 'width: 70%; height:40px'%>
+      <%= file_field_tag :avatar, :class => 'form-group', :style => 'width: 70%; height:40px'%>
 
     </div>
   </div>
     
   <div class="actions">
-      <%= f.submit 'Submit' , :class => 'btn btn-success' %>
+      <%= submit_tag 'Submit' , :class => 'btn btn-success' %>
   </div>
 <% end %>

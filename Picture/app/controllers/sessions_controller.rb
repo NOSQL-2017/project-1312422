@@ -1,4 +1,3 @@
-require 'pry'
 class SessionsController < ApplicationController
 	before_action :authorize, except: [:new, :create]
 	def new
@@ -6,7 +5,6 @@ class SessionsController < ApplicationController
 	end
 
 	def create
-		binding.pry
 		if params[:username] != nil
 			@users = User.find_by(username: params[:username])
 			if @users and @users.authenticate(params[:password])
