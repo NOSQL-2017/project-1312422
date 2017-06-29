@@ -6,8 +6,11 @@ default: &default
   username: postgres
   password: 12201995
 <<<<<<< HEAD
+<<<<<<< HEAD
   host: db
 =======
+=======
+>>>>>>> parent of 06890ec... update
   #host: 172.18.0.2
   host: localhost
   encoding: UTF8
