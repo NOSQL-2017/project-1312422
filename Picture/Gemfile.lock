@@ -39,6 +39,12 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (7.1.4)
+<<<<<<< HEAD
+=======
+    bcrypt (3.1.11)
+    bcrypt-ruby (3.1.5-x86-mingw32)
+      bcrypt (>= 3.1.3)
+>>>>>>> parent of 06890ec... update
     bindex (0.5.0)
     bootstrap-select-rails (1.6.3)
     builder (3.2.3)
@@ -185,6 +191,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+<<<<<<< HEAD
+=======
+  bcrypt-ruby (~> 3.1, >= 3.1.5)
+  bindex (~> 0.5.0)
+>>>>>>> parent of 06890ec... update
   bootstrap-select-rails (= 1.6.3)
   byebug
   coffee-rails (~> 4.2)

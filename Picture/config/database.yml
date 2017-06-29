@@ -5,7 +5,13 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: postgres
   password: 12201995
+<<<<<<< HEAD
   host: db
+=======
+  #host: 172.18.0.2
+  host: localhost
+  encoding: UTF8
+>>>>>>> parent of 06890ec... update
 
 development:
   <<: *default
